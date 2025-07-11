@@ -1,3 +1,5 @@
+# Scientific Calculator
+
 Hey Devs! Here is a modern and responsive Flutter Scientific Calculator App with both basic and advanced operations, memory functions, history tracking, and keyboard input support — all built following the Single Responsibility Principle.
 
 Features
