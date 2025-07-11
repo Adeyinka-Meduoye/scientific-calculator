@@ -1,16 +1,21 @@
-# interactive_calculator
+Hey Devs! Here is a modern and responsive Flutter Scientific Calculator App with both basic and advanced operations, memory functions, history tracking, and keyboard input support — all built following the Single Responsibility Principle.
 
-A new Flutter project.
+Features
+Basic Arithmetic — +, -, ×, ÷
+Advanced Functions — √, sin, cos, tan, log, ln, ^, π, e
+Memory Functions — MC, MR, M+, M-
+Keyboard Input Support — For physical keyboards
+History Tracking — Displays last calculation above the result
+Dark & Light Theme Toggle
+Responsive UI — Adapts across screen sizes
+Error Handling — Graceful handling of invalid operations
+Clean Codebase — SRP-compliant architecture for scalability
 
-## Getting Started
+Architecture
+The app is built with a clean separation of concerns:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+main.dart — Entry point
+calculator_home.dart — UI logic & state handling
+calculator_service.dart — All business logic and calculations
+calculator_state.dart — Centralized state model
+calculator_keyboard.dart & calculator_display.dart — Modular UI components
